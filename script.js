@@ -20,6 +20,11 @@ document.getElementById('To').addEventListener('click', function(){
     let Total = Number(document.getElementById('Total').value);
     let Rub = Number(prompt('กรอกจำนวนเงินที่รับมา'))
     let Del = Rub - Total ;
-    alert(`ทอนเงินเป็นจำนวน : ${Del}`);
+    //alert(`ทอนเงินเป็นจำนวน : ${Del}`);
+    Swal.fire(
+        'ทอนเงินจำนวน',
+        `${Del}`,
+        'success'
+    )
     window.location.reload(true)
 })
