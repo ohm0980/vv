@@ -26,5 +26,7 @@ document.getElementById('To').addEventListener('click', function(){
         `${Del}`,
         'success'
     )
-    window.location.reload(true)
+    setTimeout(function(){
+        window.location.reload(true)
+    }, 3000)
 })
